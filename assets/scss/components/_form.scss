@@ -1,0 +1,50 @@
+@use "../common/mixin";
+@use "../common/variables";
+
+.form-control {
+    background-color: var(--input-background);
+    background-clip: padding-box;
+    border: var(--input-border-width) solid var(--input-border-color);
+    color: variables.$input-color;
+    display: block;
+    font-family: var(--font-family-base);
+    font-size: var(--input-font-size);
+    font-weight: var(--input-font-weight);
+    line-height: variables.$input-line-height;
+    padding: var(--input-padding-y) var(--input-padding-x);
+    height: var(--input-height);
+    width: 100%;
+  
+    // Unstyle the caret on `<select>`s in IE10+.
+    &::-ms-expand {
+        background-color: transparent;
+        border: 0;
+    }
+  
+    // Remove select outline from select box in FF
+    &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 variables.$input-color;
+    }
+  
+    // Placeholder
+    &::placeholder {
+        color: variables.$input-placeholder-color;
+        opacity: 1;
+    }
+
+    &:disabled,
+    &[readonly] {
+        background-color: variables.$input-disabled-bg;
+        opacity: 1;
+    }
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+    &.form-control {
+        appearance: none; // Fix appearance for date inputs in Safari
+    }
+}

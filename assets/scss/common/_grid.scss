@@ -1,0 +1,9 @@
+@use "mixin";
+@use "variables";
+
+.container {
+    margin: 0 auto;
+    max-width: mixin.rem(variables.$container-width + variables.$grid-gutter-width*2);
+    padding-inline: mixin.rem(variables.$grid-gutter-width);
+    width: 100%;
+}

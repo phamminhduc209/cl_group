@@ -1,0 +1,17 @@
+@use "../common/mixin";
+@use "../common/variables";
+
+.pc {
+    @include mixin.mq("md", max) {
+        display: none;
+    }
+}
+.sp {
+    @include mixin.mq("md", min) {
+        display: none;
+    }
+}
+
+.nospace {
+    @include mixin.leadingTrim(var(--lh, var(--lineheight-base)));
+}
