@@ -1575,14 +1575,44 @@ header,
     content: "";
     position: absolute;
     inset: 0;
-    opacity: .10;
+    opacity: .11;
     background-image:
         linear-gradient(rgba(255,255,255,.09) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,.09) 1px, transparent 1px);
     background-size: 36px 36px;
-    -webkit-mask-image: linear-gradient(135deg, #000, transparent 78%);
     mask-image: linear-gradient(135deg, #000, transparent 78%);
     pointer-events: none;
+}
+
+.office-command-kicker {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font: 700 .66rem "Roboto", sans-serif;
+    letter-spacing: .18em;
+    color: rgba(255,255,255,.58);
+}
+
+.office-live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--brand-orange);
+    box-shadow: 0 0 0 6px rgba(247,148,40,.10);
+}
+
+.office-command-number {
+    position: absolute;
+    right: 26px;
+    top: 58px;
+    z-index: 0;
+    font: 900 clamp(8rem, 15vw, 13rem) "Roboto", sans-serif;
+    line-height: .8;
+    letter-spacing: -.08em;
+    color: rgba(255,255,255,.035);
+    user-select: none;
 }
 
 .office-command-copy {
@@ -1594,15 +1624,15 @@ header,
 
 .office-command-copy .eyebrow {
     color: var(--brand-orange);
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
 .office-command-copy h2 {
-    font-size: clamp(2rem, 3.2vw, 2.9rem);
+    font-size: clamp(2.2rem, 4.2vw, 3.85rem);
     color: #fff;
-    letter-spacing: -.03em;
-    line-height: 1.02;
-    margin-bottom: 20px;
+    letter-spacing: -.045em;
+    line-height: .98;
+    margin-bottom: 24px;
 }
 
 .office-command-copy .grad-text {
@@ -1617,18 +1647,18 @@ header,
 }
 
 .office-command-lead {
-    max-width: 42ch;
-    color: rgba(255,255,255,.6);
-    font-size: .92rem;
+    max-width: 48ch;
+    color: rgba(255,255,255,.62);
+    font-size: .94rem;
     line-height: 1.75;
 }
 
-/* ---------- Bản đồ Việt Nam (SVG) ---------- */
+/* ---------- Bản đồ Việt Nam (SVG, gồm Hoàng Sa & Trường Sa) ---------- */
 .office-vn-map {
     position: absolute;
-    right: -30px;
-    bottom: -20px;
-    width: min(72%, 390px);
+    right: 16px;
+    bottom: 10px;
+    width: min(86%, 470px);
     aspect-ratio: 1 / 1;
     margin: 0;
     z-index: 2;
@@ -1638,9 +1668,9 @@ header,
 .office-vn-map svg { width: 100%; height: 100%; display: block; overflow: visible; }
 
 .vn-shape {
-    fill: rgba(255,255,255,.055);
-    stroke: rgba(255,255,255,.22);
-    stroke-width: 4;
+    fill: rgba(255,255,255,.06);
+    stroke: rgba(255,255,255,.26);
+    stroke-width: 1.4;
     vector-effect: non-scaling-stroke;
 }
 
@@ -1655,9 +1685,13 @@ header,
     animation: vnpulse 2.8s ease-out infinite;
 }
 
-.vn-label     { fill: #fff; font: 800 34px "Roboto", sans-serif; letter-spacing: 1px; }
-.vn-label-sub { fill: rgba(255,255,255,.55); font: 600 22px "Be Vietnam Pro", sans-serif; }
-.vn-leader    { stroke: rgba(255,255,255,.4); stroke-width: 2; stroke-dasharray: 3 4; }
+.vn-label     { fill: #fff; font: 800 30px "Roboto", sans-serif; letter-spacing: 1px; }
+.vn-label-sub { fill: rgba(255,255,255,.6); font: 600 20px "Be Vietnam Pro", sans-serif; }
+.vn-leader    { stroke: rgba(255,255,255,.42); stroke-width: 2; stroke-dasharray: 3 4; }
+
+.vn-box        { fill: none; stroke: rgba(255,255,255,.28); stroke-width: 1.4; stroke-dasharray: 5 5; vector-effect: non-scaling-stroke; }
+.vn-isle       { fill: rgba(255,255,255,.55); }
+.vn-arch-label { fill: rgba(255,255,255,.62); font: 700 20px "Be Vietnam Pro", sans-serif; text-anchor: middle; }
 
 @keyframes vnpulse {
     0%   { transform: scale(.6);  opacity: .55; }
@@ -1666,59 +1700,77 @@ header,
 }
 
 @media (max-width: 1000px) {
-    .office-vn-map { width: 320px; right: -20px; bottom: -10px; opacity: .92; }
+    .office-vn-map { width: 380px; right: 12px; bottom: 8px; opacity: .95; }
 }
 
 @media (max-width: 640px) {
-    .office-vn-map { width: 240px; right: -10px; bottom: 8px; }
-    .vn-label { font-size: 40px; }
-    .vn-label-sub { font-size: 26px; }
+    .office-vn-map { width: 280px; right: 8px; bottom: 8px; }
+    .vn-label { font-size: 34px; }
+    .vn-label-sub { font-size: 24px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .vn-pulse { animation: none; opacity: 0; }
 }
 
-/* ---------- Bản đồ Việt Nam (SVG) ---------- */
-.office-vn-map {
-    position: absolute;
-    right: -30px;
-    bottom: -20px;
-    width: min(74%, 400px);
-    aspect-ratio: 1 / 1;
-    margin: 0;
+.office-network-line {
+    position: relative;
     z-index: 2;
-    pointer-events: none;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px 1fr 10px;
+    align-items: center;
+    gap: 0;
+    margin-top: 48px;
+    max-width: 390px;
 }
 
-.office-vn-map svg { width: 100%; height: 100%; display: block; overflow: visible; }
-
-.vn-shape {
-    fill: rgba(255,255,255,.055);
-    stroke: rgba(255,255,255,.22);
-    stroke-width: 4;
-    vector-effect: non-scaling-stroke;
+.office-network-line span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,.85);
+    background: var(--brand-navy);
 }
 
-.vn-glow  { fill: var(--brand-orange); opacity: .20; filter: blur(14px); }
-.vn-dot   { fill: var(--brand-orange); }
-.vn-ring  { fill: none; stroke: #fff; stroke-width: 3; }
-.vn-pulse {
-    fill: var(--brand-orange);
-    opacity: .4;
-    transform-box: fill-box;
-    transform-origin: center;
-    animation: vnpulse 2.8s ease-out infinite;
+.office-network-line span:first-child {
+    background: var(--brand-orange);
+    border-color: var(--brand-orange);
+    box-shadow: 0 0 0 6px rgba(247,148,40,.10);
 }
 
-.vn-label     { fill: #fff; font: 800 34px "Sora", sans-serif; letter-spacing: 1px; }
-.vn-label-sub { fill: rgba(255,255,255,.55); font: 600 22px "Be Vietnam Pro", sans-serif; }
-.vn-leader    { stroke: rgba(255,255,255,.4); stroke-width: 2; stroke-dasharray: 3 4; }
+.office-network-line i {
+    height: 1px;
+    background: linear-gradient(90deg,
+        rgba(247,148,40,.75),
+        rgba(198,46,103,.45));
+    position: relative;
+}
 
-@keyframes vnpulse {
-    0%   { transform: scale(.6);  opacity: .55; }
-    70%  { transform: scale(2.8); opacity: 0; }
-    100% { opacity: 0; }
+.office-network-line i::after {
+    content: "";
+    position: absolute;
+    inset: -3px 0;
+    background-image: repeating-linear-gradient(
+        90deg,
+        transparent 0 7px,
+        rgba(255,255,255,.18) 7px 9px
+    );
+}
+
+.office-network-note {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 14px;
+    margin-top: 12px;
+    color: rgba(255,255,255,.42);
+    font: 700 .6rem "Roboto", sans-serif;
+    letter-spacing: .14em;
+}
+
+.office-network-note b {
+    color: var(--brand-orange);
+    font-weight: 600;
 }
 
 /* Right information panel */
@@ -1900,18 +1952,11 @@ header,
     }
 
     .office-command-intro {
-        min-height: 520px;
+        min-height: 500px;
     }
 
     .office-command-copy {
         margin-top: 0;
-    }
-
-    .office-vn-map {
-        width: 320px;
-        right: -20px;
-        bottom: -10px;
-        opacity: .9;
     }
 
     .office-command-card {
@@ -1930,13 +1975,18 @@ header,
     }
 
     .office-command-intro {
-        min-height: 480px;
+        min-height: 455px;
         padding: 34px 24px 30px;
+    }
+
+    .office-command-number {
+        right: 18px;
+        top: 68px;
+        font-size: 8.5rem;
     }
 
     .office-command-copy {
         margin-top: 0;
-        max-width: none;
     }
 
     .office-command-copy h2 {
@@ -1947,14 +1997,10 @@ header,
         font-size: .86rem;
     }
 
-    .office-vn-map {
-        width: 240px;
-        right: -10px;
-        bottom: 8px;
+    .office-network-line {
+        margin-top: 36px;
+        max-width: 290px;
     }
-
-    .vn-label { font-size: 40px; }
-    .vn-label-sub { font-size: 26px; }
 
     .office-command-card {
         padding: 30px 22px 26px;
@@ -1993,10 +2039,5 @@ header,
 @media (prefers-reduced-motion: reduce) {
     .office-direction-btn {
         transition: none;
-    }
-
-    .vn-pulse {
-        animation: none;
-        opacity: 0;
     }
 }
