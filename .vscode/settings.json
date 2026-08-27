@@ -9,5 +9,6 @@
 	"liveSassCompile.settings.includeItems": [
 		"/wp-content/themes/sankenkobe2021/scss/**/*.scss"
 	],
-	"liveSassCompile.settings.generateMap": true
+	"liveSassCompile.settings.generateMap": true,
+	"liveServer.settings.port": 5501
 }
