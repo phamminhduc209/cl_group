@@ -2,12 +2,13 @@
 @use "variables";
 
 :root {
-	--font-primary: "Noto Sans JP", sans-serif;
+	--font-primary: "Be Vietnam Pro", sans-serif;
+	--font-second: "Roboto", sans-serif;
 	--font-family-base: var(--font-primary);
 	--font-weight-base: #{variables.$font-weight-base};
 	--lineheight-base: #{variables.$line-height-base};
 	--font-size-base: #{mixin.rem(14px)};
-	--color-primary: #45B2C2;
+	--color-primary: #C62E67;
 	--input-border-color: #{variables.$input-border-color};
 	--input-border-width: #{mixin.rem(variables.$input-border-width)};
 	--input-font-size: #{variables.$input-font-size};
