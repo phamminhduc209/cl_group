@@ -207,6 +207,151 @@ img.alignleft {
   cursor: pointer;
 }
 
+/* ---------- HEADER ---------- */
+.l-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(252, 250, 252, 0.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.l-header__wrap {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 0.9rem 2.4rem;
+}
+.l-header__nav {
+  margin-left: auto;
+}
+
+.gl-nav {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.gl-nav__child {
+  display: none;
+}
+.gl-nav__item {
+  position: relative;
+}
+.gl-nav__item > a {
+  font-size: 1.2rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 6px 0;
+  position: relative;
+  color: var(--ink);
+}
+.gl-nav__item > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: var(--grad);
+  transition: width 0.25s;
+}
+.gl-nav__item > a:hover::after {
+  width: 100%;
+}
+.gl-nav__item.hasChild::after {
+  content: "";
+  background: url("../images/icon_arrow.svg") no-repeat center/contain;
+  width: 0.5rem;
+  height: 0.9rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  right: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.brand img {
+  width: 60px;
+}
+
+.brand span small {
+  display: block;
+  font-family: "Be Vietnam Pro";
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--slate);
+  text-transform: uppercase;
+}
+
+.lang {
+  display: flex;
+  gap: 6px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.lang a.on {
+  color: var(--magenta);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 11px 22px;
+  border-radius: 999px;
+  background: var(--grad);
+  color: #fff;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+  box-shadow: none;
+}
+
+.btn.ghost:hover {
+  border-color: var(--magenta);
+  color: var(--magenta);
+}
+
+.burger {
+  display: none;
+  margin-left: auto;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger span {
+  width: 26px;
+  height: 2.5px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
 .hamburger-box {
   position: relative;
   display: flex;

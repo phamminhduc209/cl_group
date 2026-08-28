@@ -78,19 +78,19 @@ svg {
 
 /* ---------- HEADER ---------- */
 header {
-    position: sticky;
+    /* position: sticky;
     top: 0;
     z-index: 100;
     background: rgba(252, 250, 252, .82);
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--line)
+    border-bottom: 1px solid var(--line) */
 }
 
 .nav {
-    display: flex;
+    /* display: flex;
     align-items: center;
     gap: 32px;
-    height: 76px
+    height: 76px */
 }
 
 .brand {
@@ -406,8 +406,8 @@ section.blk {
 /* ---------- SERVICES ---------- */
 .svc-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px
 }
 
 .svc {

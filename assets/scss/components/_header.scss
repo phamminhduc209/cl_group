@@ -1,8 +1,161 @@
 @use "../common/mixin";
 @use "../common/variables";
 
-.p-header {
+/* ---------- HEADER ---------- */
+.l-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(252, 250, 252, .82);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
 
+    &__wrap {
+        display: flex;
+        align-items: center;
+        gap: mixin.rem(24px);
+        padding: mixin.rem(9px) mixin.rem(24px);
+    }
+
+    &__nav {
+        margin-left: auto;
+    }
+}
+
+.gl-nav {
+    display: flex;
+    gap: mixin.rem(24px);
+    align-items: center;
+
+    &__child {
+        display: none;
+    }
+
+    &__item {
+        position: relative;
+        
+        & > a {
+            font-size: mixin.rem(12px);
+            font-family: "Be Vietnam Pro", sans-serif;
+            padding: 6px 0;
+            position: relative;
+            color: var(--ink);
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 0;
+                background: var(--grad);
+                transition: width .25s
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        &.hasChild {
+            &::after {
+                content: "";
+                background: url('../images/icon_arrow.svg') no-repeat center / contain;
+                width: mixin.rem(5px);
+                height: mixin.rem(9px);
+                position: absolute;
+                top: 50%;
+                transform: translateY(50%);
+                right: 0;
+            }
+        }
+    }
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: mixin.rem(14px);
+}
+
+.brand img {
+    width: 60px;
+}
+
+.brand span small {
+    display: block;
+    font-family: "Be Vietnam Pro";
+    font-weight: 500;
+    letter-spacing: .18em;
+    color: var(--slate);
+    text-transform: uppercase
+}
+
+.lang {
+    display: flex;
+    gap: 6px;
+    font-size: mixin.rem(14px);
+    font-weight: 600;
+    color: var(--slate)
+}
+
+.lang a.on {
+    color: var(--magenta)
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: .9rem;
+    padding: 11px 22px;
+    border-radius: 999px;
+    background: var(--grad);
+    color: #fff;
+    box-shadow: var(--shadow);
+    transition: transform .2s, filter .2s
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05)
+}
+
+.btn.ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1.5px solid var(--line);
+    box-shadow: none
+}
+
+.btn.ghost:hover {
+    border-color: var(--magenta);
+    color: var(--magenta)
+}
+
+.burger {
+    display: none;
+    margin-left: auto;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px
+}
+
+.burger span {
+    width: 26px;
+    height: 2.5px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: .3s
 }
 
 .hamburger-box {
