@@ -1,0 +1,78 @@
+.ser-flex {
+  display: flex;
+  align-items: stretch;
+}
+.ser-flex--reverse {
+  flex-direction: row-reverse;
+}
+.ser-flex:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.ser-media {
+  position: relative;
+  border-radius: var(--r);
+  width: 50%;
+  overflow: hidden;
+  min-height: 30rem;
+}
+
+.ser-content {
+  width: 50%;
+  padding: 2.4rem 2.4rem 0;
+}
+
+.ser-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.ser-img img {
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.ser-ttl {
+  color: var(--brand-magenta);
+  font-size: clamp(2.2rem, 16.3661971831px + 1.5023474178vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+}
+
+.ser-desc {
+  margin-bottom: 1.8rem;
+}
+
+.ser-list {
+  list-style: none;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.ser-list li {
+  display: flex;
+  gap: 1.2rem;
+  font-weight: 500;
+}
+
+.ser-list .dot {
+  flex: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--grad);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
+}

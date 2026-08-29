@@ -1,0 +1,20 @@
+.p-overview__item:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.p-overview__item > *:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+.p-overview__ttl {
+  color: var(--brand-magenta);
+  font-size: clamp(2.4rem, 17.661971831px + 1.6901408451vw, 4.2rem);
+  font-weight: bold;
+  text-align: center;
+}
+.p-overview__desc {
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .p-overview__desc {
+    font-size: 1.8rem;
+  }
+}

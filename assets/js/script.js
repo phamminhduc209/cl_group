@@ -3,7 +3,12 @@ const App = (() => {
 
 	// Private variables
 	let scrollState = { top: 0, left: 0 };
+	let lenis = null;
 	const splideInstances = new Map();
+
+	const $header = $('.l-header');
+	const $headerOuterHeight = $header.outerHeight();
+	let stickyOffset = $headerOuterHeight;
 
 	const defaultSplideOptions = {
 		pauseOnHover: false,
@@ -17,13 +22,47 @@ const App = (() => {
 		pagination: false,
 	};
 
+	const globalOverlay = $('.overlay');
+	const globalNav = $('.l-header__nav');
+	const btn = $('.js-hamburger');
+	const navArrow = $('.gl-nav__arrow');
+
 	// Private methods
 	const bindEvents = () => {
 		$(document)
 			.on('click', '.tab a', handleTabClick)
 			.on('click', '.anchor-link', handleAnchorLink)
-			.on('click', '.page-top a', scrollToTop);
+			.on('click', '.page-top a', scrollToTop)
+			.on('click', '.js-hamburger', handleGlobalNav)
+			.on('click', '.overlay', closeGlobalNav)
+			.on('click', '.gl-nav__arrow', handleChildMenu);
 	};
+
+	const handleGlobalNav = function () {
+		if (btn.hasClass('is-active')) {
+			btn.removeClass('is-active');
+			globalOverlay.fadeOut(300);
+			globalNav.removeClass('is-show');
+			App.resumeScroll();
+		} else {
+			App.stopScroll();
+			btn.addClass('is-active');
+			globalNav.addClass('is-show');
+			globalOverlay.fadeIn(300);
+		}
+	}
+
+	const closeGlobalNav = () => {
+		btn.removeClass('is-active');
+		globalOverlay.fadeOut(300);
+		globalNav.removeClass('is-show');
+		App.resumeScroll();
+	}
+
+	const handleChildMenu = function () {
+		navArrow.stop().toggleClass('is-collapse');
+		$(this).prev('.gl-nav__child').stop().slideToggle();
+	}
 
 	const handleTabClick = function (e) {
 		e.preventDefault();
@@ -160,5 +199,30 @@ const App = (() => {
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
-	App.init();
+	const lenis = new Lenis();
+
+	function raf(time) {
+		lenis.raf(time);
+		requestAnimationFrame(raf);
+	}
+	requestAnimationFrame(raf);
+
+	setTimeout(() => {
+		new WOW({
+			boxClass: 'wow',
+			animateClass: 'animate__animated',
+			offset: 50
+		}).init();
+	}, 500);
 });
+
+// count-up stats
+const nums = document.querySelectorAll('.num');
+const co = new IntersectionObserver((es) => { es.forEach(e => { if (e.isIntersecting) { run(e.target); co.unobserve(e.target) } }) }, { threshold: .5 });
+nums.forEach(n => co.observe(n));
+function run(el) {
+	const to = +el.dataset.to, suf = el.dataset.suf || '', dur = 1400; let s = null;
+	if (matchMedia('(prefers-reduced-motion:reduce)').matches) { el.textContent = to.toLocaleString() + suf; return }
+	function step(t) { if (!s) s = t; const p = Math.min((t - s) / dur, 1); const v = Math.floor((1 - Math.pow(1 - p, 3)) * to); el.textContent = v.toLocaleString() + suf; if (p < 1) requestAnimationFrame(step) }
+	requestAnimationFrame(step);
+}

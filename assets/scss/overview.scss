@@ -1,0 +1,31 @@
+@use 'common/variables';
+@use 'common/mixin';
+
+.p-overview {
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: mixin.rem(80px);
+        }
+
+        & > * {
+            &:not(:last-child) {
+                margin-bottom: mixin.rem(32px);
+            }
+        }
+    }
+
+    &__ttl {
+        color: var(--brand-magenta);
+        font-size: mixin.fluid(24px, 42px);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__desc {
+        font-size: mixin.rem(16px);
+
+        @include mixin.mq('md', min) {
+            font-size: mixin.rem(18px);
+        }
+    }
+}

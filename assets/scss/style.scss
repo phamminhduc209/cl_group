@@ -3,6 +3,7 @@
 @use 'common/reboot';
 @use 'common/grid';
 
+@use 'components/animation';
 @use 'components/button';
 @use 'components/header';
 @use 'components/footer';
@@ -10,16 +11,3 @@
 @use 'components/table';
 @use 'components/title';
 @use 'components/part';
-
-// Plum (tím chủ đạo)	
-// #7E2A6B	đầu gradient, dùng cho accent/nav
-// Magenta	
-// #A31E63	màu nhấn chính, link, eyebrow
-// Crimson	
-// #D6322A	giữa gradient
-// Tangerine (cam)	
-// #F2892E	cuối gradient, CTA phụ
-// Ink	
-// #17111C	nền tối, chữ chính
-// Mist	
-// #F5EFF4	nền section sáng (ám tím nhẹ)

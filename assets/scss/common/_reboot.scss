@@ -10,6 +10,7 @@
 	--font-size-base: #{mixin.rem(14px)};
 	--color-primary: #C62E67;
 	--color-white: #FFF;
+	--color-body: #1E1E1E;
 	--input-border-color: #{variables.$input-border-color};
 	--input-border-width: #{mixin.rem(variables.$input-border-width)};
 	--input-font-size: #{variables.$input-font-size};
@@ -18,6 +19,19 @@
 	--input-height: #{mixin.rem(50px)};
 	--input-padding-x: #{mixin.rem(20px)};
 	--input-padding-y: #{mixin.rem(10px)};
+	--plum: #8F2683;
+    --magenta: #C62E67;
+    --crimson: #ED3F32;
+    --tangerine: #F79428;
+    --ink: #101923;
+    --slate: #5E5A63;
+    --surface: #FCFAF8;
+    --mist: #F7F0F4;
+    --line: #ECE3E8;
+    --grad: linear-gradient(120deg, #8F2683 0%, #C62E67 30%, #ED3F32 62%, #F79428 100%);
+    --grad-soft: linear-gradient(120deg, rgba(143, 38, 131, .10), rgba(198, 46, 103, .08), rgba(247, 148, 40, .10));
+    --shadow: 0 #{mixin.rem(18px)} #{mixin.rem(50px)} #{mixin.rem(-18px)} rgba(198, 46, 103, .30);
+    --r: #{mixin.rem(8px)};
 
 	@include mixin.mq('md', min) {
 		--font-size-base: #{mixin.rem(16px)};
@@ -31,12 +45,9 @@
 }
 
 html {
-	font-size: variables.$font-size-reset;
+	font-size: 10px;
+	scroll-behavior: smooth;
 	overflow-x: hidden;
-
-	@include mixin.mq('md', min) {
-		font-size: min(12px, 0.6944444444vw);
-	}
 
 	&.noscroll {
 		position: fixed;
@@ -49,16 +60,25 @@ html {
 }
 
 body {
-	background-color: variables.$body-bg;
-	color: variables.$body-color;
+	background: var(--color-white);
+	// color: var(--ink);
+	color: #101923;
 	margin: 0;
 	font-family: var(--font-family-base);
 	font-weight: var(--font-weight-base);
 	font-size: var(--font-size-base);
 	line-height: var(--lineheight-base);
-	text-align: left;
-	position: relative;
-	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -67,7 +87,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+figure {
 	margin: 0;
 }
 

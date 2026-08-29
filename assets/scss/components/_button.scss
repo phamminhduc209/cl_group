@@ -2,29 +2,56 @@
 @use "../common/variables";
 
 .btn {
-    display: inline-block;
-    font-family: variables.$btn-font-family;
+    background-color: transparent;
+    border: variables.$btn-border-width solid transparent;
+    transition: transform .2s, filter .2s;
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+    color: var(--color-white);
+    display: inline-flex;
+    align-items: center;
+    gap: mixin.rem(8px);
+    font-family: var(--font-ttl);
     font-weight: variables.$btn-font-weight;
-    color: variables.$body-color;
+    padding: mixin.rem(11px) mixin.rem(22px);
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
     user-select: none;
-    background-color: transparent;
-    border: variables.$btn-border-width solid transparent;
-  
+
     &:focus,
     &.focus {
         outline: 0;
     }
-  
+
     // Disabled comes first so active can properly restyle
     &.disabled,
     &:disabled {
         opacity: variables.$btn-disabled-opacity;
     }
-  
+
     &:not(:disabled):not(.disabled) {
         cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.05)
+    }
+
+    &--primary {
+        background: var(--grad);
+    }
+
+    &--ghost {
+        color: #fff;
+        border-color: rgba(255, 255, 255, .45);
+        background: rgba(255, 255, 255, .05);
+
+        &:hover {
+            border-color: #fff;
+            color: #fff;
+            background: rgba(255, 255, 255, .14);
+        }
     }
 }
