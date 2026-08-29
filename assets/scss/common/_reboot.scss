@@ -6,9 +6,10 @@
 	--font-second: "Roboto", sans-serif;
 	--font-family-base: var(--font-primary);
 	--font-weight-base: #{variables.$font-weight-base};
-	--lineheight-base: #{variables.$line-height-base};
+	--lineheight-base: 1.6;
 	--font-size-base: #{mixin.rem(14px)};
 	--color-primary: #C62E67;
+	--color-white: #FFF;
 	--input-border-color: #{variables.$input-border-color};
 	--input-border-width: #{mixin.rem(variables.$input-border-width)};
 	--input-font-size: #{variables.$input-font-size};
@@ -32,6 +33,10 @@
 html {
 	font-size: variables.$font-size-reset;
 	overflow-x: hidden;
+
+	@include mixin.mq('md', min) {
+		font-size: min(12px, 0.6944444444vw);
+	}
 
 	&.noscroll {
 		position: fixed;

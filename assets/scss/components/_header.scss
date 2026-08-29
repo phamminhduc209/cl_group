@@ -13,7 +13,7 @@
     &__wrap {
         display: flex;
         align-items: center;
-        gap: mixin.rem(24px);
+        gap: mixin.rem(32px);
         padding: 0 mixin.rem(24px);
     }
 
@@ -24,16 +24,16 @@
 
 .gl-nav {
     display: flex;
-    gap: mixin.rem(24px);
+    gap: mixin.rem(32px);
     align-items: center;
 
     &__item {
         position: relative;
-        padding-block: mixin.rem(10px);
+        padding-block: mixin.rem(24px) mixin.rem(20px);
 
         & > a {
             font-size: mixin.rem(14px);
-            padding: 6px 0;
+            padding-bottom: mixin.rem(4px);
             position: relative;
             color: var(--ink);
 
@@ -56,14 +56,18 @@
         }
 
         &.hasChild {
-            &::after {
-                content: "";
-                background: url('../images/icon_arrow.svg') no-repeat center / contain;
-                width: mixin.rem(10px);
-                height: mixin.rem(16px);
-                position: absolute;
-                top: mixin.rem(6px);
-                right: mixin.rem(-12px);
+            & > a {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background: url('../images/icon_arrow.svg') no-repeat center / contain;
+                    width: mixin.rem(10px);
+                    height: mixin.rem(16px);
+                    position: absolute;
+                    top: mixin.rem(2px);
+                    right: mixin.rem(-12px);
+                }
             }
 
             &:hover {
