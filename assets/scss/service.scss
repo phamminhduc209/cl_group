@@ -10,7 +10,11 @@
     }
 
     &:not(:last-child) {
-        margin-bottom: mixin.rem(80px);
+        margin-bottom: mixin.rem(40px);
+
+        @include mixin.mq('md', min) {
+            margin-bottom: mixin.rem(80px);
+        }
     }
 }
 
@@ -46,7 +50,7 @@
 
 .ser-ttl {
     color: var(--brand-magenta);
-    font-size: mixin.fluid(22px, 38px);
+    font-size: mixin.rem(24px);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: mixin.rem(18px);

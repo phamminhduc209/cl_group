@@ -1,0 +1,197 @@
+@use 'common/variables';
+@use 'common/mixin';
+
+.c-content__ttl {
+    margin-bottom: mixin.rem(40px);
+    text-align: center;
+}
+
+.stime-inner {
+    &:not(:last-child) {
+        margin-bottom: mixin.rem(40px);
+
+        @include mixin.mq('md', min) {
+            margin-bottom: mixin.rem(80px);
+        }
+    }
+}
+
+.stime-item {
+    display: flex;
+    
+    @include mixin.mq('md', min) {
+        align-items: center;
+        gap: mixin.rem(50px);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: mixin.rem(40px);
+
+        @include mixin.mq('md', min) {
+            margin-bottom: mixin.rem(80px);
+        }
+    }
+}
+
+.stime-img {
+    width: calc(50% - 3.5rem);
+
+    .box {
+        display: flex;
+        padding-top: calc((334 / 624) * 100%);
+        position: relative;
+        border-radius: 0.8rem;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -webkit-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
+
+.stime-desc {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: mixin.rem(16px);
+    flex-direction: column;
+}
+
+.stime-name {
+    color: var(--brand-magenta);
+    font-size: mixin.rem(24px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: mixin.rem(18px);
+}
+
+.stime-btn {
+    border-radius: 0.6rem;
+}
+
+
+
+.cstep {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.cstep-odt-steps {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+}
+
+.cstep-odt-step {
+    width: calc(100% / 3);
+    position: relative;
+    min-width: 10rem;
+}
+
+.cstep-odt-icon {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    row-gap: 0.5rem;
+    -webkit-column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    height: 100%;
+}
+
+.cstep-odt-step.step-pass .cstep-odt-icon {
+    background: transparent;
+}
+
+.cstep-odt-step:first-child .cstep-odt-icon {
+    position: relative;
+}
+
+.cstep-odt-icon .icon {
+    width: 6rem;
+    height: 6rem;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    z-index: 1;
+    background-color: #dedede;
+    border-radius: 100rem;
+    position: relative;
+}
+
+.cstep-odt-icon .icon img {
+    display: block;
+    height: 2.4rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.cstep-odt-step.step-pass .cstep-odt-icon .icon {
+    background: #009950;
+}
+
+.cstep-odt-icon .text {
+    z-index: 1;
+    text-align: center;
+    color: #595959;
+}
+
+.cstep-odt-step {
+    &:not(:first-child) {
+        &::after {
+            position: absolute;
+            content: "";
+            height: 0.2rem;
+            width: 100%;
+            left: 0;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            top: 3rem;
+            background: #009950;
+        }
+    }
+}

@@ -6,7 +6,12 @@
   flex-direction: row-reverse;
 }
 .ser-flex:not(:last-child) {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .ser-flex:not(:last-child) {
+    margin-bottom: 8rem;
+  }
 }
 
 .ser-media {
@@ -42,7 +47,7 @@
 
 .ser-ttl {
   color: var(--brand-magenta);
-  font-size: clamp(2.2rem, 16.3661971831px + 1.5023474178vw, 3.8rem);
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.8rem;

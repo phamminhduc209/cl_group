@@ -74,6 +74,7 @@ html.lenis body {
 
 .c-mv {
     position: relative;
+    z-index: 2;
 
     &__content {
         position: absolute;
@@ -132,11 +133,20 @@ html.lenis body {
 }
 
 .c-content {
-    background: url('../images/ab-top-de.png') no-repeat top center / contain;
     padding-block: mixin.rem(50px);
 
     @include mixin.mq('md', min) {
         padding-block: mixin.rem(100px);
+    }
+
+    &::before {
+        content: "";
+        background: url('../images/ab-top-de.png') no-repeat top center / contain;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -1;
     }
 
     &__head {

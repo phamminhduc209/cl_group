@@ -41,4 +41,5 @@
 <script src="<?=url_path?>assets/js/jquery.min.js"></script>
 <script src="<?=url_path?>assets/js/wow.min.js"></script>
 <script src="<?=url_path?>assets/js/lenis.min.js"></script>
+<script src="<?=url_path?>assets/js/splide.min.js"></script>
 <script src="<?= asset(url_path.'assets/js/script.js') ?>"></script>

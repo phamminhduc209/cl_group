@@ -214,6 +214,21 @@ document.addEventListener('DOMContentLoaded', function() {
 			offset: 50
 		}).init();
 	}, 500);
+
+	if (document.querySelector('.js-news-sl')) {
+		App.initSplide('.js-news-sl', {
+			type: 'loop',
+			perPage: 3,
+			perMove: 1,
+			arrows: false,
+			pagination: true,
+			gap: 24,
+			// rewind: true,
+			autoplay: true,
+			speed: 2000,
+			interval: 4000,
+		});
+	}
 });
 
 // count-up stats

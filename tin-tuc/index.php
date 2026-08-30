@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#101923">
     <title>CL Group — Vận tải & Giao nhận toàn cầu</title>
     <?php include('../inc/head.php'); ?>
-    <link rel="stylesheet" href="<?= asset(url_path.'assets/css/service.css') ?>">
+    <link rel="stylesheet" href="<?= asset(url_path.'assets/css/news.css') ?>">
 </head>
 
 <body>
@@ -31,11 +31,202 @@
             <div class="container">
                 <div class="c-content__head center wow fadeInUp">
                     <h2 class="c-content__ttl">Thị trường Logistics</h2>
-                    
+                    <div class="splide js-news-sl">
+                        <div class="splide__track">
+                            <div class="splide__list news-list">
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="c-content__head center wow fadeInUp">
                     <h2 class="c-content__ttl">Kiến thức Logistics</h2>
+                    <div class="splide js-news-sl">
+                        <div class="splide__track">
+                            <div class="splide__list news-list">
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                                <div class="splide__slide news-item">
+                                    <a href="#" class="news-image"><img src="<?= url_path ?>assets/images/Tieu-chuan-ISPM-15-cho-pallet-go-xuat-khau.png" alt=""></a>
+                                    <div class="news-content">
+                                        <p class="news-date">
+                                            <span class="icon"> <i class="fa-light fa-calendar-days"></i></span>
+                                            <span class="txt">12/01/2026            </span>
+                                        </p>
+                                        <h2 class="news-ttl"><a href="#">Tiêu Chuẩn ISPM 15 Cho Pallet Gỗ Xuất Khẩu: Doanh Nghiệp Cần Biết Gì?</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
