@@ -1798,7 +1798,7 @@ header,
     border-bottom: mixin.rem(1px) solid var(--line);
 
     @include mixin.mq('md', min) {
-        padding: mixin.rem(40px) 0;
+        padding: mixin.rem(20px) 0;
     }
 }
 

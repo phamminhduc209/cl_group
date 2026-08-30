@@ -1,6 +1,6 @@
 <?php
-    define('url_home', '');
-    define('url_path', '');
+    define('url_home', '/cl_group/');
+    define('url_path', '/cl_group/');
 
     function asset(string $path): string {
         $fullPath = $_SERVER['DOCUMENT_ROOT'] . '/' . ltrim($path, '/');

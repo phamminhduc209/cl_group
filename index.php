@@ -21,8 +21,8 @@
                         Việt Nam với các thị trường quốc tế. Chúng tôi đồng hành cùng doanh nghiệp từ khâu tư vấn phương
                         án, đặt chỗ và vận chuyển đến theo dõi lô hàng và hỗ trợ chứng từ.</p>
                     <div class="hero-cta">
-                        <a class="btn btn--primary" href="<?= url_home ?>/bao-gia/"><strong>YÊU CẦU BÁO GIÁ →</strong></a>
-                        <a class="btn btn--ghost" href="<?= url_home ?>/dich-vu/"><strong>KHÁM PHÁ DỊCH VỤ</strong></a>
+                        <a class="btn btn--primary" href="<?= url_home ?>bao-gia/"><strong>YÊU CẦU BÁO GIÁ →</strong></a>
+                        <a class="btn btn--ghost" href="<?= url_home ?>dich-vu/"><strong>KHÁM PHÁ DỊCH VỤ</strong></a>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                         <li><span class="dot">✓</span> Tư vấn tuyến & HS code cho từng ngành hàng</li>
                     </ul>
                 </div>
-                <figure class="about-card wow fadeInUp"><img src="<?= url_path ?>/assets/images/about_img.jpg" class="object-cover"
+                <figure class="about-card wow fadeInUp"><img src="<?= url_path ?>assets/images/about_img.jpg" class="object-cover"
                         alt="Kết nối hành trình - Tối ưu chuỗi cung ứng"></figure>
             </div>
         </section>

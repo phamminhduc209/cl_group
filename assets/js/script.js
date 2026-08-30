@@ -207,13 +207,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 	requestAnimationFrame(raf);
 
-	setTimeout(() => {
-		new WOW({
-			boxClass: 'wow',
-			animateClass: 'animate__animated',
-			offset: 50
-		}).init();
-	}, 500);
+	App.init(lenis);
+
+	new WOW({
+		boxClass: 'wow',
+		animateClass: 'animate__animated',
+		offset: 50
+	}).init();
 
 	if (document.querySelector('.js-news-sl')) {
 		App.initSplide('.js-news-sl', {
@@ -227,6 +227,15 @@ document.addEventListener('DOMContentLoaded', function() {
 			autoplay: true,
 			speed: 2000,
 			interval: 4000,
+			breakpoints: {
+				1024: {
+					perPage: 2,
+				},
+				640: {
+					perPage: 1,
+				},
+			},
+
 		});
 	}
 });

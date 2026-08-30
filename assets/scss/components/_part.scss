@@ -76,12 +76,27 @@ html.lenis body {
     position: relative;
     z-index: 2;
 
+    @include mixin.mq('md') {
+        height: 20vh;
+    }
+
+    figure {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     &__content {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 0;
-        right: 0;
+        left: mixin.rem(20px);
+        right: mixin.rem(20px);
         max-width: mixin.rem(1280px);
         margin-inline: auto;
     }
@@ -89,7 +104,11 @@ html.lenis body {
     &__ttl {
         color: var(--color-white);
         line-height: 1.5;
-        font-size: mixin.rem(30c-breadcrumbpx);
+        font-size: mixin.rem(18px);
+
+        @include mixin.mq('md', min) {
+            font-size: mixin.rem(24px);
+        }
     }
 
     .c-breadcrumb {
@@ -120,6 +139,10 @@ html.lenis body {
             font-family: var(--font-second);
             font-weight: 500;
             color: var(--color-white);
+
+            @include mixin.mq('md') {
+                font-size: mixin.rem(11px);
+            }
         }
     }
 

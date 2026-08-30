@@ -18,8 +18,11 @@
 
 .stime-item {
     display: flex;
+    gap: mixin.rem(16px);
+    flex-direction: column;
     
     @include mixin.mq('md', min) {
+        flex-direction: row;
         align-items: center;
         gap: mixin.rem(50px);
     }
@@ -34,7 +37,9 @@
 }
 
 .stime-img {
-    width: calc(50% - 3.5rem);
+    @include mixin.mq('md', min) {
+        width: calc(50% - 3.5rem);
+    }
 
     .box {
         display: flex;
@@ -72,7 +77,6 @@
     font-size: mixin.rem(24px);
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: mixin.rem(18px);
 }
 
 .stime-btn {
