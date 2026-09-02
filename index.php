@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CL Group — Vận tải & Giao nhận toàn cầu</title>
+    <title>CL Group — Kết nối hành trình - Tối ưu chuỗi cung ứng</title>
     <?php include('inc/head.php'); ?>
 </head>
 
@@ -84,7 +84,7 @@
                 <div class="sec-head center wow fadeInUp">
                     <p class="eyebrow">Dịch vụ</p>
                     <h2>Giải pháp vận tải trọn gói</h2>
-                    <p>Bốn phương thức vận chuyển và dịch vụ hỗ trợ đi kèm, thiết kế linh hoạt theo nhu cầu doanh
+                    <p>Sáu phương thức vận chuyển và dịch vụ hỗ trợ đi kèm, thiết kế linh hoạt theo nhu cầu doanh
                         nghiệp.</p>
                 </div>
                 <div class="svc-grid">

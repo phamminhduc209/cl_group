@@ -1,0 +1,28 @@
+.contact-box {
+  border-radius: var(--r);
+  padding: 4rem 6rem;
+  background: #F0F0F0;
+}
+.contact-box__ttl {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #36A158;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 4rem;
+}
+
+.contact-flex {
+  display: flex;
+  row-gap: 3rem;
+  margin: 0 1.6rem;
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+  padding: 0 1.6rem;
+}

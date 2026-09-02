@@ -4,29 +4,39 @@
 .form-control {
     background-color: var(--input-background);
     background-clip: padding-box;
-    border: var(--input-border-width) solid var(--input-border-color);
+    border-radius: mixin.rem(4px);
+    border: none;
     color: variables.$input-color;
     display: block;
     font-family: var(--font-family-base);
     font-size: var(--input-font-size);
     font-weight: var(--input-font-weight);
     line-height: variables.$input-line-height;
-    padding: var(--input-padding-y) var(--input-padding-x);
+    padding: 0 mixin.rem(16px);
     height: var(--input-height);
     width: 100%;
-  
+
+    @include mixin.mq('md', min) {
+        font-size: mixin.rem(16px);
+        padding: 0 mixin.rem(20px);
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+
     // Unstyle the caret on `<select>`s in IE10+.
     &::-ms-expand {
         background-color: transparent;
         border: 0;
     }
-  
+
     // Remove select outline from select box in FF
     &:-moz-focusring {
         color: transparent;
         text-shadow: 0 0 0 variables.$input-color;
     }
-  
+
     // Placeholder
     &::placeholder {
         color: variables.$input-placeholder-color;
@@ -35,8 +45,12 @@
 
     &:disabled,
     &[readonly] {
-        background-color: variables.$input-disabled-bg;
+        // background-color: variables.$input-disabled-bg;
         opacity: 1;
+    }
+
+    &.error {
+        outline: 1px solid var(--color-danger);
     }
 }
 
@@ -47,4 +61,149 @@ input[type="month"] {
     &.form-control {
         appearance: none; // Fix appearance for date inputs in Safari
     }
+}
+
+textarea {
+    &.form-control {
+        max-width: 100%;
+        height: mixin.rem(168px);
+
+        @include mixin.mq('md', min) {
+            height: mixin.rem(168px);
+        }
+    }
+}
+
+label.error {
+    color: var(--color-danger);
+    display: none !important;
+    font-size: mixin.rem(14px);
+    margin-top: mixin.rem(4px);
+}
+
+.frm {
+    &-row {
+        &:not(:last-child) {
+            margin-bottom: mixin.rem(24px);
+
+            @include mixin.mq('md', min) {
+                margin-bottom: mixin.rem(28px);
+            }
+        }
+
+        &--action {
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+            gap: mixin.rem(12px);
+            justify-content: center;
+            width: 100%;
+
+            @include mixin.mq('md', min) {
+                flex-direction: row;
+            }
+        }
+    }
+
+    &-policy {
+        font-size: mixin.rem(12px);
+        line-height: 1.7;
+        
+        @include mixin.mq('md', min) {
+            text-align: center;
+        }
+
+        a {
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+
+    &-ttl {
+        font-family: var(--font-family-ttl);
+        font-size: mixin.rem(16px);
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: -1%;
+        margin-bottom: mixin.rem(14px);
+
+        @include mixin.mq('md', min) {
+            font-size: mixin.rem(18px);
+            margin-bottom: mixin.rem(15px);
+        }
+    }
+
+    &-req {
+        color: var(--color-danger);
+        vertical-align: top;
+    }
+}
+
+.frm-note {
+    font-size: mixin.rem(13px);
+    margin-top: mixin.rem(12px);
+}
+
+.recheck-item {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.8rem 0;
+}
+
+.recheck-checkbox {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: 0.1rem solid #334155;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.recheck-checkbox::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: calc(50%);
+    position: absolute;
+    color: #36A158;
+    font-size: 1.4rem;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    font-family: "Font Awesome 5 Pro";
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.recheck-text {
+    margin-left: 0.8rem;
+    line-height: 1;
 }

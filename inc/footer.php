@@ -24,7 +24,7 @@
 					<li><a href="#">Vận tải đường biển</a></li>
 					<li><a href="#">Vận tải hàng không</a></li>
 					<li><a href="#">Vận tải nội địa</a></li>
-					<li><a href="#">Vận tải nội địa</a></li>
+					<li><a href="#">Thủ tục hải quan & chứng từ</a></li>
 					<li><a href="#">Kho bãi & phân phối</a></li>
 					<li><a href="#">Door-to-door & đa phương thức</a></li>
 				</ul>

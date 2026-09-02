@@ -92,7 +92,11 @@
 .hero-cta {
     display: flex;
     gap: mixin.rem(24px);
-    flex-wrap: wrap
+    flex-wrap: wrap;
+
+    .btn {
+        width: auto;
+    }
 }
 
 .hero .btn.ghost {

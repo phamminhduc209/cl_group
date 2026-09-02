@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#101923">
-    <title>CL Group — Vận tải & Giao nhận toàn cầu</title>
+    <title>CL Group — Kết nối hành trình - Tối ưu chuỗi cung ứng</title>
     <?php include('../../inc/head.php'); ?>
     <link rel="stylesheet" href="<?= asset(url_path.'assets/css/trade.css') ?>">
 </head>
