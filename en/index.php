@@ -19,18 +19,18 @@
                     <h1>Connecting Journeys.<br><span class="accent">Optimizing Supply Chains.</span></h1>
                     <p class="lead">CL Group provides flexible freight forwarding and logistics solutions connecting Vietnam with international markets. We support businesses from route planning, booking and transportation to shipment monitoring and documentation assistance.</p>
                     <div class="hero-cta">
-                        <a class="btn btn--primary" href="<?= url_home ?>bao-gia/"><strong>REQUEST A QUOTE →</strong></a>
-                        <a class="btn btn--ghost" href="<?= url_home ?>dich-vu/"><strong>EXPLORE OUR SERVICES</strong></a>
+                        <a class="btn btn--primary" href="<?= url_home ?>en/request-a -quote/"><strong>REQUEST A QUOTE →</strong></a>
+                        <a class="btn btn--ghost" href="<?= url_home ?>en/services/"><strong>EXPLORE OUR SERVICES</strong></a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- STATS -->
         
-        <section class="stats stats-logistics" aria-label="Năng lực CL Group">
+        <section class="stats stats-logistics" aria-label="CL Group · Connecting Journeys. Optimizing Supply Chains.">
             <div class="stats-route" aria-hidden="true"></div>
             <div class="wrap wow fadeInUp">
-                <h2 class="stats-kicker">CL Group · Global Forwarding</h2>
+                <h2 class="stats-kicker">CL Group · Connecting Journeys. Optimizing Supply Chains.</h2>
                 <div class="stats-grid">
                     <div class="stat">
                         <div class="stat-icon" aria-hidden="true">↗</div>
@@ -99,9 +99,8 @@
                                 <path d="M19.4 17 21 8H3l1.6 9" />
                                 <path d="M12 3v5M8 8V6M16 8V6" />
                             </svg></div>
-                        <h3>Vận tải hàng không</h3>
-                        <p>Giải pháp vận chuyển nhanh cho hàng cần giao gấp, hàng mẫu, hàng giá trị cao và các nhu cầu
-                            quốc tế.</p>
+                        <h3>Air Freight</h3>
+                        <p>Fast transportation solutions for urgent cargo, samples, high-value goods and international shipping needs.</p>
                         <!-- <p class="more">Xem chi tiết</p> -->
                     </div>
                     <div class="svc wow fadeInUp">
@@ -112,8 +111,8 @@
                                 <circle cx="7.5" cy="17.5" r="2.5" />
                                 <circle cx="17.5" cy="17.5" r="2.5" />
                             </svg></div>
-                        <h3>Vận tải nội địa</h3>
-                        <p>Kết nối cảng, kho và nhà máy bằng phương án phù hợp thông qua mạng lưới đối tác vận tải.</p>
+                        <h3>Inland Transportation</h3>
+                        <p>Connecting ports, warehouses and factories through suitable solutions provided by our transportation partner network.</p>
                         <!-- <p class="more">Xem chi tiết</p> -->
                     </div>
                     <div class="svc wow fadeInUp">
@@ -123,9 +122,8 @@
                                 <path d="M14 2v5h5" />
                                 <path d="m9 14 1.8 1.8L14 12" />
                             </svg></div>
-                        <h3>Thủ tục hải quan & chứng từ</h3>
-                        <p>Tư vấn và phối hợp thực hiện thủ tục hải quan, C/O, kiểm dịch và chứng từ thông qua đối tác
-                            đủ điều kiện.</p>
+                        <h3>Customs Procedures & Documentation</h3>
+                        <p>Consultation and coordination of customs procedures, C/O, quarantine and related documentation through qualified partners.</p>
                         <!-- <p class="more">Xem chi tiết</p> -->
                     </div>
                     <div class="svc wow fadeInUp">
@@ -136,8 +134,8 @@
                                 <rect x="7" y="13" width="10" height="8" rx="1" />
                                 <path d="M7 17h10" />
                             </svg></div>
-                        <h3>Kho bãi & phân phối</h3>
-                        <p>Giải pháp lưu kho, đóng gói, dán nhãn, xếp dỡ và phân phối thông qua hệ thống đối tác.</p>
+                        <h3>Warehousing & Distribution</h3>
+                        <p>Warehousing, packing, labeling, handling and distribution solutions through our partner network.</p>
                         <!-- <p class="more">Xem chi tiết</p> -->
                     </div>
                     <div class="svc wow fadeInUp">
@@ -148,9 +146,8 @@
                                 <path d="M7.5 5H15a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h7.5" stroke-dasharray="0.1 4" />
                                 <path d="M7.5 5H15a4 4 0 0 1 0 8H9a4 4 0 0 0 0 8h7.5" opacity=".35" />
                             </svg></div>
-                        <h3>Door-to-door & đa phương thức</h3>
-                        <p>Kết hợp vận tải biển, hàng không, đường bộ, kho bãi và giao hàng chặng cuối trong một phương
-                            án thống nhất.</p>
+                        <h3>Door-to-Door & Multimodal</h3>
+                        <p>Combining ocean, air and inland transportation, warehousing and last-mile delivery into one coordinated solution.</p>
                         <!-- <p class="more">Xem chi tiết</p> -->
                     </div>
                 </div>
@@ -161,10 +158,9 @@
         <section class="blk why">
             <div class="wrap">
                 <div class="sec-head center wow fadeInUp">
-                    <p class="eyebrow">Lý do lựa chọn</p>
-                    <h2>Vì sao doanh nghiệp chọn <br class="sp">CL Group</h2>
-                    <p style="margin:0 auto">Chúng tôi đồng hành như một đầu mối duy nhất, tối ưu chi phí và tiến độ cho
-                        từng lô hàng.</p>
+                    <p class="eyebrow">Why Choose Us</p>
+                    <h2>Why businesses choose CL Group</h2>
+                    <p style="margin:0 auto">We act as a single point of contact, optimizing costs and schedules for each shipment.</p>
                 </div>
                 <ul class="why-grid">
                     <li class="why-item wow fadeInUp">
@@ -173,7 +169,7 @@
                                 <path d="M12 20h9" />
                                 <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
                             </svg></span>
-                        <h3>Giải pháp được thiết kế theo nhu cầu thực tế của từng lô hàng.</h3>
+                        <h3>Solutions tailored to the actual requirements of each shipment.</h3>
                     </li>
                     <li class="why-item wow fadeInUp">
                         <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -181,7 +177,7 @@
                                 <path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2Z" />
                                 <path d="M8 9h8M8 13h5" />
                             </svg></span>
-                        <h3>Phản hồi kịp thời và cập nhật thông tin rõ ràng.</h3>
+                        <h3>Timely responses and clear shipment updates.</h3>
                     </li>
                     <li class="why-item wow fadeInUp">
                         <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -190,7 +186,7 @@
                                 <path d="M3 12h18" />
                                 <path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18Z" />
                             </svg></span>
-                        <h3>Mạng lưới hãng vận chuyển và đối tác trong, ngoài nước.</h3>
+                        <h3>A network of carriers and domestic and international partners.</h3>
                     </li>
                     <li class="why-item wow fadeInUp">
                         <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -201,7 +197,7 @@
                                 <path d="M19 6l-2.5 6h5Z" />
                                 <path d="M8 21h8" />
                             </svg></span>
-                        <h3>Cân đối chi phí, lịch trình, thời gian và rủi ro vận hành.</h3>
+                        <h3>Balanced consideration of cost, schedule, transit time and operational risk.</h3>
                     </li>
                     <li class="why-item wow fadeInUp">
                         <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -213,7 +209,7 @@
                                 <circle cx="19" cy="19" r="2" />
                                 <path d="m6.5 6.5 3.3 3.3M17.5 6.5l-3.3 3.3M6.5 17.5l3.3-3.3M17.5 17.5l-3.3-3.3" />
                             </svg></span>
-                        <h3>Một đầu mối phối hợp xuyên suốt hành trình.</h3>
+                        <h3>One point of contact throughout the shipment journey.</h3>
                     </li>
                 </ul>
             </div>
@@ -223,30 +219,50 @@
         <section class="blk cargo">
             <div class="wrap">
                 <div class="sec-head center wow fadeInUp">
-                    <p class="eyebrow">Chuyên tuyến</p>
-                    <h2>Mặt hàng xuất nhập khẩu</h2>
-                    <p style="margin:0 auto">Kinh nghiệm xử lý đa dạng ngành hàng với quy trình và HS code chuẩn hóa.
-                    </p>
+                    <p class="eyebrow">Specialized route</p>
+                    <h2>Import and export goods</h2>
+                    <p style="margin:0 auto">Experience handling a diverse range of product categories using standardized processes and HS codes.</p>
                 </div>
                 <div class="cargo-grid">
-                    <div class="cargo-item wow fadeInUp"><span class="tag">TEXTILE</span><span class="k">Sợi, chỉ</span><span
-                            class="v">Nguyên liệu ngành dệt may</span></div>
-                    <div class="cargo-item wow fadeInUp"><span class="tag">AUTO</span><span class="k">Lốp xe</span><span
-                            class="v">Vận
-                            chuyển an toàn, nhanh</span></div>
-                    <div class="cargo-item wow fadeInUp"><span class="tag">HOME</span><span class="k">Nội thất</span><span
-                            class="v">Đảm
-                            bảo tiến độ dự án</span></div>
-                    <div class="cargo-item wow fadeInUp"><span class="tag">FRESH</span><span class="k">Thủy sản</span><span
-                            class="v">Hàng tươi sống, chuỗi lạnh</span></div>
-                    <div class="cargo-item wow fadeInUp"><span class="tag">PLASTIC</span><span class="k">Nhựa PET</span><span
-                            class="v">Hạt & thành phẩm</span></div>
-                    <div class="cargo-item wow fadeInUp"><span class="tag">LEATHER</span><span class="k">Da bò</span><span
-                            class="v">Nguyên liệu thời trang</span></div>
-                    <div class="cargo-item wow fadeInUp"><span class="tag">APPAREL</span><span class="k">May mặc</span><span
-                            class="v">Hàng & phụ liệu</span></div>
-                    <div class="cargo-item wow fadeInUp"><span class="tag">AGRI</span><span class="k">Nông sản</span><span
-                            class="v">Xuất tuyến Trung Quốc & quốc tế</span></div>
+                <div class="cargo-item wow fadeInUp">
+                    <span class="tag">TEXTILE</span>
+                    <span class="k">Yarn & Thread</span>
+                    <span class="v">Raw materials for the textile and garment industry</span>
+                </div>
+                <div class="cargo-item wow fadeInUp">
+                    <span class="tag">AUTO</span>
+                    <span class="k">Tires</span>
+                    <span class="v">Safe and efficient transportation</span>
+                </div>
+                <div class="cargo-item wow fadeInUp">
+                    <span class="tag">HOME</span>
+                    <span class="k">Furniture</span>
+                    <span class="v">Reliable delivery to keep projects on schedule</span>
+                </div>
+                <div class="cargo-item wow fadeInUp">
+                    <span class="tag">FRESH</span>
+                    <span class="k">Seafood</span>
+                    <span class="v">Fresh and temperature-controlled cargo</span>
+                </div>
+                <div class="cargo-item wow fadeInUp">
+                    <span class="tag">PLASTIC</span>
+                    <span class="k">PET Plastics</span>
+                    <span class="v">Resins, pellets & finished products</span>
+                </div>
+                <div class="cargo-item wow fadeInUp">
+                    <span class="tag">LEATHER</span>
+                    <span class="k">Cowhide Leather</span>
+                    <span class="v">Raw materials for the fashion industry</span>
+                </div>
+                <div class="cargo-item wow fadeInUp">
+                    <span class="tag">APPAREL</span>
+                    <span class="k">Garments</span>
+                    <span class="v">Finished garments & garment accessories</span>
+                </div>
+                <div class="cargo-item wow fadeInUp">
+                    <span class="tag">AGRI</span>
+                    <span class="k">Agricultural Products</span>
+                    <span class="v">Export shipments to China & international markets</span>
                 </div>
             </div>
         </section>
@@ -313,7 +329,7 @@
 
                     <article class="office-command-card">
                         <div class="office-command-card-top">
-                            <h3>CÔNG TY TNHH<br>THƯƠNG MẠI DỊCH VỤ CL GROUP</h3>
+                            <h3>CL GROUP TRADING SERVICE COMPANY LIMITED</h3>
                         </div>
 
                         <div class="office-command-info">
@@ -377,7 +393,7 @@
                 <div class="band wow fadeInUp">
                     <h2>Ready for the next shipment?</h2>
                     <p>Send us your route and cargo details, and the CL Group team will provide a detailed quote within 24 business hours.</p>
-                    <a class="btn" href="<?= url_home ?>lien-he">Contact us for consultation. →</a>
+                    <a class="btn" href="<?= url_home ?>en/request-a -quote/">Contact us for consultation. →</a>
                 </div>
             </div>
         </section>

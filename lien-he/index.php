@@ -29,11 +29,7 @@
 
         <div class="c-content">
             <div class="container">
-                <p style="margin-bottom: 20px;">Vui lòng liên hệ với bộ phận Chăm sóc khách hàng để được cung cấp thông tin</p>
-                <ul>
-                    <li><p>Điện thoại: <a href="tel:0923989239">0923 989 239</a></p></li>
-                    <li><p>Email: <a href="mailto:info@cl-group.com.vn">info@cl-group.com.vn</a></p></li>
-                </ul>
+                
             </div>
         </div>
     </main>

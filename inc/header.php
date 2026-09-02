@@ -22,7 +22,7 @@
 				<li class="gl-nav__item"><a href="<?= url_home ?>tuyen-van-chuyen-mat-hang/" class="gl-nav__link">Tuyến vận chuyển & mặt hàng</a></li>
 				<li class="gl-nav__item"><a href="<?= url_home ?>tin-tuc/" class="gl-nav__link">Tin tức/kiến thức logistics</a></li>
 				<li class="gl-nav__item"><a href="<?= url_home ?>bao-gia/" class="gl-nav__link">Yêu cầu báo giá</a></li>
-				<li class="gl-nav__item"><a href="<?= url_home ?>lien-he/" class="gl-nav__link">Liên hệ</a></li>
+				<!-- <li class="gl-nav__item"><a href="<?= url_home ?>lien-he/" class="gl-nav__link">Liên hệ</a></li> -->
 			</ul>
 		</nav>
 		<div class="l-header__lang"><a class="on" href="<?= url_home ?>">VI</a><span>/</span><a href="<?= url_home ?>en/">EN</a></div>

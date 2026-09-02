@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#101923">
-    <title>CL Group — Kết nối hành trình - Tối ưu chuỗi cung ứng</title>
+    <title>CL Group — Connecting Journeys. Optimizing Supply Chains.</title>
     <?php include('../inc/head.php'); ?>
     <link rel="stylesheet" href="<?= asset(url_path.'assets/css/news.css') ?>">
 </head>
@@ -17,11 +17,11 @@
         <div class="c-mv">
             <figure><img src="<?= url_path ?>assets/images/mv_img.jpg" class="object-cover" alt=""></figure>
             <div class="c-mv__content">
-                <h1 class="c-mv__ttl">Tin Tức</h1>
+                <h1 class="c-mv__ttl">NEWS</h1>
                 <nav class="c-breadcrumb">
                     <ul class="c-breadcrumb__list">
-                        <li class="c-breadcrumb__item"><a href="<?= url_home ?>" class="c-breadcrumb__link">Trang Chủ</a></li>
-                        <li class="c-breadcrumb__item"><span class="c-breadcrumb__txt">Tin Tức</span></li>
+                        <li class="c-breadcrumb__item"><a href="<?= url_home ?>en/" class="c-breadcrumb__link">HOME</a></li>
+                        <li class="c-breadcrumb__item"><span class="c-breadcrumb__txt">NEWS</span></li>
                     </ul>
                 </nav>
             </div>
@@ -30,8 +30,9 @@
         <div class="c-content">
             <div class="container">
                 <div class="c-content__head center wow fadeInUp">
-                    <h2 class="c-content__ttl">Thị trường Logistics</h2>
-                    <div class="splide js-news-sl">
+                    <h2 class="c-content__ttl">Logistics Market</h2>
+                    <p>Empty</p>
+                    <!-- <div class="splide js-news-sl">
                         <div class="splide__track">
                             <div class="splide__list news-list">
                                 <div class="splide__slide news-item">
@@ -126,12 +127,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="c-content__head center wow fadeInUp">
-                    <h2 class="c-content__ttl">Kiến thức Logistics</h2>
-                    <div class="splide js-news-sl">
+                    <h2 class="c-content__ttl">Logistics Knowledge</h2>
+                    <p>Empty</p>
+                    <!-- <div class="splide js-news-sl">
                         <div class="splide__track">
                             <div class="splide__list news-list">
                                 <div class="splide__slide news-item">
@@ -226,7 +228,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

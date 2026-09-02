@@ -31,7 +31,8 @@
             <div class="container">
                 <div class="c-content__head center wow fadeInUp">
                     <h2 class="c-content__ttl">Thị trường Logistics</h2>
-                    <div class="splide js-news-sl">
+                    <p>Chưa có bài đăng</p>
+                    <!-- <div class="splide js-news-sl">
                         <div class="splide__track">
                             <div class="splide__list news-list">
                                 <div class="splide__slide news-item">
@@ -126,12 +127,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="c-content__head center wow fadeInUp">
                     <h2 class="c-content__ttl">Kiến thức Logistics</h2>
-                    <div class="splide js-news-sl">
+                    <p>Chưa có bài đăng</p>
+                    <!-- <div class="splide js-news-sl">
                         <div class="splide__track">
                             <div class="splide__list news-list">
                                 <div class="splide__slide news-item">
@@ -226,7 +228,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

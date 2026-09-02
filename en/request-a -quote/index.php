@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#101923">
-    <title>CL Group — Kết nối hành trình - Tối ưu chuỗi cung ứng</title>
+    <title>CL Group — Connecting Journeys. Optimizing Supply Chains.</title>
     <?php include('../inc/head.php'); ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="<?= asset(url_path.'assets/css/contact.css') ?>">
@@ -18,11 +18,11 @@
         <div class="c-mv">
             <figure><img src="<?= url_path ?>assets/images/mv_img.jpg" class="object-cover" alt=""></figure>
             <div class="c-mv__content">
-                <h1 class="c-mv__ttl">NHẬN TƯ VẤN & BÁO GIÁ</h1>
+                <h1 class="c-mv__ttl">REQUEST A QUOTE</h1>
                 <nav class="c-breadcrumb">
                     <ul class="c-breadcrumb__list">
-                        <li class="c-breadcrumb__item"><a href="<?= url_home ?>" class="c-breadcrumb__link">Trang Chủ</a></li>
-                        <li class="c-breadcrumb__item"><span class="c-breadcrumb__txt">NHẬN TƯ VẤN & BÁO GIÁ</span></li>
+                        <li class="c-breadcrumb__item"><a href="<?= url_home ?>en/" class="c-breadcrumb__link">HOME</a></li>
+                        <li class="c-breadcrumb__item"><span class="c-breadcrumb__txt">REQUEST A QUOTE</span></li>
                     </ul>
                 </nav>
             </div>
@@ -30,35 +30,35 @@
 
         <div class="c-content">
             <div class="container">
-                <p class="">Bạn đang cần phương án vận chuyển cho lô hàng sắp tới?<br>Hãy gửi thông tin cho CL Group.<br>Đội ngũ của chúng tôi sẽ xem xét tuyến vận chuyển, loại hàng, lịch dự kiến và yêu cầu giao nhận để tư vấn phương án phù hợp.</p>
+                <p style="text-align: center; margin-bottom: 40px;">Planning an upcoming shipment?<br>Send the details to CL Group.<br>Our team will review the route, cargo type, expected schedule and delivery requirements to recommend a suitable solution.</p>
 
                 <div class="contact-box">
-                    <h2 class="contact-box__ttl">Tư vấn cước vận chuyển</h2>
+                    <h2 class="contact-box__ttl">Shipping rate consultation</h2>
                     <div class="contact-form">
                         <form action="#" method="POST" class="frm">
                             <div class="frm-row">
-                                <p class="frm-ttl">Họ và tên<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Name<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_name" class="form-control" placeholder="Nhập Họ và tên" require>
+                                    <input type="text" name="frm_name" class="form-control" placeholder="Name" require>
                                 </div>
                             </div>
                             <div class="frm-row">
-                                <p class="frm-ttl">Công ty<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Company<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_name" class="form-control" placeholder="Nhập Công ty" require>
+                                    <input type="text" name="frm_name" class="form-control" placeholder="Company" require>
                                 </div>
                             </div>
                             <div class="frm-row">
-                                <p class="frm-ttl">Số điện thoại<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Phone<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="tel" name="frm_phone" class="form-control" placeholder="Nhập Số điện thoại" require>
+                                    <input type="tel" name="frm_phone" class="form-control" placeholder="Phone" require>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Email<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="email" name="frm_mail" class="form-control" placeholder="Nhập Email" require>
+                                    <input type="email" name="frm_mail" class="form-control" placeholder="Email" require>
                                 </div>
                             </div>
 
@@ -66,12 +66,10 @@
                                 <p class="frm-ttl">Chọn dịch vụ<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <select name="frm_lvc" class="form-control" require>
-                                        <option value="frm_duongbien">Chọn Vận chuyển bằng</option>
-                                        <option value="frm_duongbien">Vận chuyển đường biển</option>
-                                        <option value="frm_hangkhong">Vận tải hàng không</option>
-                                        <!-- <option value="">Vận tải nội địa</option> -->
-                                        <!-- <option value="">Thủ tục hải quan & chứng từ</option> -->
-                                        <!-- <option value="">Kho bãi & phân phối</option> -->
+                                        <option value="">Select shipping method</option>
+                                        <option value="frm_duongbien">Ocean Freight</option>
+                                        <option value="frm_hangkhong">Air Freight</option>
+                                        <option value="frm_noidia">Inland Transportation</option>
                                     </select>
                                 </div>
                             </div>
@@ -79,38 +77,38 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">POL<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_pol" class="form-control" placeholder="Nhập POL" require>
-                                    <p class="frm-note">Cảng nơi hàng hóa được xếp lên tàu</p>
+                                    <input type="text" name="frm_pol" class="form-control" placeholder="POL" require>
+                                    <p class="frm-note">Port where cargo is loaded onto the ship</p>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">POD<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_pod" class="form-control" placeholder="Nhập POD" require>
-                                    <p class="frm-note">Cảng nơi hàng hóa được dỡ khỏi tàu</p>
+                                    <input type="text" name="frm_pod" class="form-control" placeholder="POD" require>
+                                    <p class="frm-note">Port where cargo is unloaded from the ship</p>
                                 </div>
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Loại hàng<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Commodity<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Nhập Loại hàng" require>
+                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Commodity" require>
                                 </div>
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Số lượng<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Quantity<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Nhập Số lượng" require>
+                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Quantity" require>
                                 </div>
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Loại Container<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Container Type<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <select name="frm_lvc" class="form-control" require>
-                                        <option value="">Chọn Loại Cont</option>
+                                        <option value="">Choose Container Type</option>
                                         <option value="20'RF">20'RF</option>
                                         <option value="20'DC">20'DC</option>
                                         <option value="20'HC">20'HC</option>
@@ -122,39 +120,46 @@
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Thời gian lấy hàng<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Weight<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" class="form-control pickup_time" placeholder="Thời gian lấy hàng" require>
+                                    <input type="text" class="form-control pickup_time" placeholder="Weight" require>
                                 </div>
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Dịch vụ cần hỗ trợ<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Cargo ready date<span class="frm-rq">*</span></p>
+                                <div class="frm-content">
+                                    <input type="text" class="form-control pickup_time" placeholder="Cargo ready date" require>
+                                </div>
+                            </div>
+
+                            <div class="frm-row">
+                                <p class="frm-ttl">Cargo ready date<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <div class="recheck-block">
                                         <div class="recheck-item">
                                             <input class="recheck-input" type="checkbox" name="frm_bhhh" hidden="">
                                             <div class="recheck-checkbox"></div>
-                                            <p class="recheck-text">Bảo hiểm hàng hoá</p>
+                                            <p class="recheck-text">Cargo insurance</p>
                                         </div>
                                         <div class="recheck-item">
                                             <input class="recheck-input" type="checkbox" name="frm_kbhq" hidden="">
                                             <div class="recheck-checkbox"></div>
-                                            <p class="recheck-text">Khai báo hải quan</p>
+                                            <p class="recheck-text">Customs declaration</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Dịch vụ cần hỗ trợ<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Notes<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <textarea class="form-control" placeholder="Nhập thông tin khác" name="frm_mess" title="Nhập thông tin khác"></textarea>
                                 </div>
                             </div>
 
                             <div class="frm-row frm-row--action">
-                                <button type="submit" class="btn btn--primary btn--submit">Gửi</button>
+                                <button type="submit" class="btn btn--primary btn--submit">Send</button>
                             </div>
                         </form>
                     </div>

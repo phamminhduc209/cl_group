@@ -29,10 +29,10 @@
         </section>
         <!-- STATS -->
         
-        <section class="stats stats-logistics" aria-label="Năng lực CL Group">
+        <section class="stats stats-logistics" aria-label="CL Group · Kết nối hành trình - Tối ưu chuỗi cung ứng">
             <div class="stats-route" aria-hidden="true"></div>
             <div class="wrap wow fadeInUp">
-                <h2 class="stats-kicker">CL Group · Global Forwarding</h2>
+                <h2 class="stats-kicker">CL Group · Kết nối hành trình - Tối ưu chuỗi cung ứng</h2>
                 <div class="stats-grid">
                     <div class="stat">
                         <div class="stat-icon" aria-hidden="true">↗</div>

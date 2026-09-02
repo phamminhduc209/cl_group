@@ -3,10 +3,17 @@
 
 .ser-flex {
     display: flex;
+    flex-direction: column;
     align-items: stretch;
 
+    @include mixin.mq('md', min) {
+        flex-direction: row;
+    }
+
     &--reverse {
-        flex-direction: row-reverse;
+        @include mixin.mq('md', min) {
+            flex-direction: row-reverse;
+        }
     }
 
     &:not(:last-child) {
@@ -28,7 +35,11 @@
 
 .ser-content {
     width: 50%;
-    padding: mixin.rem(24px) mixin.rem(24px) 0;
+    padding: 0 mixin.rem(20px) 0;
+
+    @include mixin.mq('md') {
+        padding-top: mixin.rem(24px);
+    }
 }
 
 .ser-img {

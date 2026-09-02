@@ -8,6 +8,7 @@
   --color-primary: #C62E67;
   --color-white: #FFF;
   --color-body: #1E1E1E;
+  --color-danger: #CF0000;
   --input-border-color: #e6e6e6;
   --input-border-width: 0.1rem;
   --input-font-size: 14px;
@@ -711,6 +712,9 @@ label.error {
     flex-direction: row;
   }
 }
+.frm-rq {
+  color: var(--color-danger);
+}
 .frm-policy {
   font-size: 1.2rem;
   line-height: 1.7;
@@ -726,10 +730,9 @@ label.error {
 }
 .frm-ttl {
   font-family: var(--font-family-ttl);
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: 500;
   line-height: 1;
-  letter-spacing: -1%;
   margin-bottom: 1.4rem;
 }
 @media (min-width: 768px) {
@@ -942,12 +945,9 @@ html.lenis body {
 .c-breadcrumb__item a, .c-breadcrumb__item span {
   font-family: var(--font-second);
   font-weight: 500;
+  font-size: 1.1rem;
   color: var(--color-white);
-}
-@media (max-width: 767px) {
-  .c-breadcrumb__item a, .c-breadcrumb__item span {
-    font-size: 1.1rem;
-  }
+  text-transform: uppercase;
 }
 .c-breadcrumb__link {
   transition: opacity 0.3s ease;

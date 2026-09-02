@@ -30,7 +30,7 @@
 
         <div class="c-content">
             <div class="container">
-                <p class="">Bạn đang cần phương án vận chuyển cho lô hàng sắp tới?<br>Hãy gửi thông tin cho CL Group.<br>Đội ngũ của chúng tôi sẽ xem xét tuyến vận chuyển, loại hàng, lịch dự kiến và yêu cầu giao nhận để tư vấn phương án phù hợp.</p>
+                <p style="text-align: center; margin-bottom: 40px;">Bạn đang cần phương án vận chuyển cho lô hàng sắp tới?<br>Hãy gửi thông tin cho CL Group.<br>Đội ngũ của chúng tôi sẽ xem xét tuyến vận chuyển, loại hàng, lịch dự kiến và yêu cầu giao nhận để tư vấn phương án phù hợp.</p>
 
                 <div class="contact-box">
                     <h2 class="contact-box__ttl">Tư vấn cước vận chuyển</h2>
@@ -66,12 +66,10 @@
                                 <p class="frm-ttl">Chọn dịch vụ<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <select name="frm_lvc" class="form-control" require>
-                                        <option value="frm_duongbien">Chọn Vận chuyển bằng</option>
+                                        <option value="">Chọn Vận chuyển bằng</option>
                                         <option value="frm_duongbien">Vận chuyển đường biển</option>
                                         <option value="frm_hangkhong">Vận tải hàng không</option>
-                                        <!-- <option value="">Vận tải nội địa</option> -->
-                                        <!-- <option value="">Thủ tục hải quan & chứng từ</option> -->
-                                        <!-- <option value="">Kho bãi & phân phối</option> -->
+                                        <option value="frm_noidia">Vận tải nội địa</option>
                                     </select>
                                 </div>
                             </div>
@@ -122,6 +120,13 @@
                             </div>
 
                             <div class="frm-row">
+                                <p class="frm-ttl">Trọng lượng<span class="frm-rq">*</span></p>
+                                <div class="frm-content">
+                                    <input type="text" class="form-control pickup_time" placeholder="Trọng lượng" require>
+                                </div>
+                            </div>
+
+                            <div class="frm-row">
                                 <p class="frm-ttl">Thời gian lấy hàng<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <input type="text" class="form-control pickup_time" placeholder="Thời gian lấy hàng" require>
@@ -147,7 +152,7 @@
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Dịch vụ cần hỗ trợ<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Ghi chú<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <textarea class="form-control" placeholder="Nhập thông tin khác" name="frm_mess" title="Nhập thông tin khác"></textarea>
                                 </div>

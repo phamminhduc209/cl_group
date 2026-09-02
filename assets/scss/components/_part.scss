@@ -138,11 +138,9 @@ html.lenis body {
         a, span {
             font-family: var(--font-second);
             font-weight: 500;
+            font-size: mixin.rem(11px);
             color: var(--color-white);
-
-            @include mixin.mq('md') {
-                font-size: mixin.rem(11px);
-            }
+            text-transform: uppercase;
         }
     }
 

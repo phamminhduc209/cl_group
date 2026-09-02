@@ -124,6 +124,15 @@
                                 <div class="box"><img src="<?= url_path ?>assets/images/time3.jpg" class="" alt=""></div>
                             </figure>
                             <div class="stime-desc">
+                                <h2 class="stime-name">Dệt may và nguyên phụ liệu.</h2>
+                                <!-- <a href="#" class="btn btn--primary stime-btn">Xem Chi Tiết  →</a> -->
+                            </div>
+                        </div>
+                        <div class="stime-item wow fadeInUp">
+                            <figure class="stime-img">
+                                <div class="box"><img src="<?= url_path ?>assets/images/time3.jpg" class="" alt=""></div>
+                            </figure>
+                            <div class="stime-desc">
                                 <h2 class="stime-name">Phân bón, nguyên liệu sản xuất và hàng thương mại thông thường.</h2>
                                 <!-- <a href="#" class="btn btn--primary stime-btn">Xem Chi Tiết  →</a> -->
                             </div>

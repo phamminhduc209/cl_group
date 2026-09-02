@@ -105,6 +105,11 @@ label.error {
         }
     }
 
+    &-rq {
+        color: var(--color-danger);
+        // font-size: mixin.rem(11px);
+    }
+
     &-policy {
         font-size: mixin.rem(12px);
         line-height: 1.7;
@@ -121,10 +126,9 @@ label.error {
 
     &-ttl {
         font-family: var(--font-family-ttl);
-        font-size: mixin.rem(16px);
-        font-weight: bold;
+        font-size: mixin.rem(14px);
+        font-weight: 500;
         line-height: 1;
-        letter-spacing: -1%;
         margin-bottom: mixin.rem(14px);
 
         @include mixin.mq('md', min) {

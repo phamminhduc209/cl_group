@@ -110,7 +110,7 @@
                             </div>
                             <div class="svc wow fadeInUp">
                                 <h3>Khách hàng là trọng tâm</h3>
-                                <p>Khách hàng là trọng tâm</p>
+                                <p>Lắng nghe và thiết kế giải pháp phù hợp với nhu cầu thực tế.</p>
                             </div>
                             <div class="svc wow fadeInUp">
                                 <h3>Trách nhiệm</h3>
