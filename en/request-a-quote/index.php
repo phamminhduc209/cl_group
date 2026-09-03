@@ -122,7 +122,7 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">Weight<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" class="form-control pickup_time" placeholder="Weight" require>
+                                    <input type="text" class="form-control" placeholder="Weight" require>
                                 </div>
                             </div>
 
@@ -137,16 +137,16 @@
                                 <p class="frm-ttl">Cargo ready date<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <div class="recheck-block">
-                                        <div class="recheck-item">
+                                        <label class="recheck-item">
                                             <input class="recheck-input" type="checkbox" name="frm_bhhh" hidden="">
                                             <div class="recheck-checkbox"></div>
                                             <p class="recheck-text">Cargo insurance</p>
-                                        </div>
-                                        <div class="recheck-item">
+                                        </label>
+                                        <label class="recheck-item">
                                             <input class="recheck-input" type="checkbox" name="frm_kbhq" hidden="">
                                             <div class="recheck-checkbox"></div>
                                             <p class="recheck-text">Customs declaration</p>
-                                        </div>
+                                        </label>
                                     </div>
                                 </div>
                             </div>

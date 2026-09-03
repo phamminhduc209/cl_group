@@ -19,7 +19,7 @@
                     <h1>Connecting Journeys.<br><span class="accent">Optimizing Supply Chains.</span></h1>
                     <p class="lead">CL Group provides flexible freight forwarding and logistics solutions connecting Vietnam with international markets. We support businesses from route planning, booking and transportation to shipment monitoring and documentation assistance.</p>
                     <div class="hero-cta">
-                        <a class="btn btn--primary" href="<?= url_home ?>en/request-a -quote/"><strong>REQUEST A QUOTE →</strong></a>
+                        <a class="btn btn--primary" href="<?= url_home ?>en/request-a-quote/"><strong>REQUEST A QUOTE →</strong></a>
                         <a class="btn btn--ghost" href="<?= url_home ?>en/services/"><strong>EXPLORE OUR SERVICES</strong></a>
                     </div>
                 </div>
@@ -369,7 +369,7 @@
                                 <div>
                                     <small>Email</small>
                                     <p>
-                                        <a href="mailto:info@cl-group.com.vn">info@cl-group.com.vnn</a>
+                                        <a href="mailto:info@cl-group.com.vn">info@cl-group.com.vn</a>
                                     </p>
                                 </div>
                             </div>
@@ -393,7 +393,7 @@
                 <div class="band wow fadeInUp">
                     <h2>Ready for the next shipment?</h2>
                     <p>Send us your route and cargo details, and the CL Group team will provide a detailed quote within 24 business hours.</p>
-                    <a class="btn" href="<?= url_home ?>en/request-a -quote/">Contact us for consultation. →</a>
+                    <a class="btn" href="<?= url_home ?>en/request-a-quote/">Contact us for consultation. →</a>
                 </div>
             </div>
         </section>

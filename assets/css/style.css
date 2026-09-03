@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --font-primary: "Be Vietnam Pro", sans-serif;
   --font-second: "Roboto", sans-serif;
@@ -799,6 +800,17 @@ label.error {
 .recheck-text {
   margin-left: 0.8rem;
   line-height: 1;
+}
+
+.recheck-item .recheck-input:checked ~ .recheck-checkbox {
+  background: #36A158;
+  border-color: #36A158;
+}
+
+.recheck-item .recheck-input:checked ~ .recheck-checkbox::before {
+  opacity: 1;
+  content: "✓";
+  color: white;
 }
 
 .table {

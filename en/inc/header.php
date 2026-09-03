@@ -2,7 +2,7 @@
 	<div class="l-header__wrap">
 		<a class="l-header__logo" href="<?= url_home ?>en/">
 			<img src="<?= url_path ?>assets/images/logo.png" alt="CL Group">
-			<span>CL Group<small>Global Forwarding</small></span>
+			<span>CL Group<small>Connecting Journeys. Optimizing Supply Chains.</small></span>
 		</a>
 		
 		<nav class="l-header__nav">
@@ -21,7 +21,7 @@
 				<li class="gl-nav__item"><a href="<?= url_home ?>en/services/" class="gl-nav__link">Services</a></li>
 				<li class="gl-nav__item"><a href="<?= url_home ?>en/trade-lane-cargo-type/" class="gl-nav__link">Trade Lanes & Cargo Types</a></li>
 				<li class="gl-nav__item"><a href="<?= url_home ?>en/news-logistics-insights/" class="gl-nav__link">News & Logistics Insights</a></li>
-				<li class="gl-nav__item"><a href="<?= url_home ?>en/request-a -quote/" class="gl-nav__link">Request a Quote</a></li>
+				<li class="gl-nav__item"><a href="<?= url_home ?>en/request-a-quote/" class="gl-nav__link">Request a Quote</a></li>
 				<!-- <li class="gl-nav__item"><a href="<?= url_home ?>en/contact/" class="gl-nav__link">Contact</a></li> -->
 			</ul>
 		</nav>

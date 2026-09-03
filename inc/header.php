@@ -2,7 +2,7 @@
 	<div class="l-header__wrap">
 		<a class="l-header__logo" href="<?= url_home ?>">
 			<img src="<?= url_path ?>assets/images/logo.png" alt="CL Group">
-			<span>CL Group<small>Global Forwarding</small></span>
+			<span>CL Group<small>Kết nối hành trình - Tối ưu chuỗi cung ứng.</small></span>
 		</a>
 		
 		<nav class="l-header__nav">

@@ -122,7 +122,7 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">Trọng lượng<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" class="form-control pickup_time" placeholder="Trọng lượng" require>
+                                    <input type="text" class="form-control" placeholder="Trọng lượng" require>
                                 </div>
                             </div>
 
@@ -137,16 +137,16 @@
                                 <p class="frm-ttl">Dịch vụ cần hỗ trợ<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
                                     <div class="recheck-block">
-                                        <div class="recheck-item">
+                                        <label class="recheck-item">
                                             <input class="recheck-input" type="checkbox" name="frm_bhhh" hidden="">
                                             <div class="recheck-checkbox"></div>
                                             <p class="recheck-text">Bảo hiểm hàng hoá</p>
-                                        </div>
-                                        <div class="recheck-item">
+                                        </label>
+                                        <label class="recheck-item">
                                             <input class="recheck-input" type="checkbox" name="frm_kbhq" hidden="">
                                             <div class="recheck-checkbox"></div>
                                             <p class="recheck-text">Khai báo hải quan</p>
-                                        </div>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
