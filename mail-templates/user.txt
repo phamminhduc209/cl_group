@@ -1,0 +1,12 @@
+Day la email tu dong tu CL Group.
+
+{{frm_name}},
+
+CL Group da nhan yeu cau bao gia cua ban. Doi ngu cua chung toi se lien he lai som.
+
+Thong tin da gui:
+
+{{contact_details}}
+
+
+Neu can ho tro, vui long tra loi email nay hoac lien he info@cl-group.com.vn.

@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+?>
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -35,37 +41,40 @@
                 <div class="contact-box">
                     <h2 class="contact-box__ttl">Tư vấn cước vận chuyển</h2>
                     <div class="contact-form">
-                        <form action="#" method="POST" class="frm">
+                        <form action="<?= url_path ?>contact.php" method="POST" class="frm">
+                            <input type="hidden" name="form_submit" value="1">
+                            <input type="hidden" name="form_nonce" value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8') ?>">
+                            <input type="hidden" name="return_url" value="<?= url_path ?>bao-gia/">
                             <div class="frm-row">
                                 <p class="frm-ttl">Họ và tên<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_name" class="form-control" placeholder="Nhập Họ và tên" require>
+                                    <input type="text" name="frm_name" class="form-control" placeholder="Nhập Họ và tên" required>
                                 </div>
                             </div>
                             <div class="frm-row">
                                 <p class="frm-ttl">Công ty<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_name" class="form-control" placeholder="Nhập Công ty" require>
+                                    <input type="text" name="frm_company" class="form-control" placeholder="Nhập Công ty" required>
                                 </div>
                             </div>
                             <div class="frm-row">
                                 <p class="frm-ttl">Số điện thoại<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="tel" name="frm_phone" class="form-control" placeholder="Nhập Số điện thoại" require>
+                                    <input type="tel" name="frm_phone" class="form-control" placeholder="Nhập Số điện thoại" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Email<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="email" name="frm_mail" class="form-control" placeholder="Nhập Email" require>
+                                    <input type="email" name="frm_mail" class="form-control" placeholder="Nhập Email" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Chọn dịch vụ<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <select name="frm_lvc" class="form-control" require>
+                                    <select name="frm_lvc" class="form-control" required>
                                         <option value="">Chọn Vận chuyển bằng</option>
                                         <option value="frm_duongbien">Vận chuyển đường biển</option>
                                         <option value="frm_hangkhong">Vận tải hàng không</option>
@@ -77,7 +86,7 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">POL<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_pol" class="form-control" placeholder="Nhập POL" require>
+                                    <input type="text" name="frm_pol" class="form-control" placeholder="Nhập POL" required>
                                     <p class="frm-note">Cảng nơi hàng hóa được xếp lên tàu</p>
                                 </div>
                             </div>
@@ -85,7 +94,7 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">POD<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_pod" class="form-control" placeholder="Nhập POD" require>
+                                    <input type="text" name="frm_pod" class="form-control" placeholder="Nhập POD" required>
                                     <p class="frm-note">Cảng nơi hàng hóa được dỡ khỏi tàu</p>
                                 </div>
                             </div>
@@ -93,21 +102,21 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">Loại hàng<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Nhập Loại hàng" require>
+                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Nhập Loại hàng" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Số lượng<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Nhập Số lượng" require>
+                                    <input type="text" name="frm_quantity" class="form-control" placeholder="Nhập Số lượng" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Loại Container<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <select name="frm_lvc" class="form-control" require>
+                                    <select name="frm_container" class="form-control" required>
                                         <option value="">Chọn Loại Cont</option>
                                         <option value="20'RF">20'RF</option>
                                         <option value="20'DC">20'DC</option>
@@ -122,14 +131,14 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">Trọng lượng<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" class="form-control" placeholder="Trọng lượng" require>
+                                    <input type="text" name="frm_weight" class="form-control" placeholder="Trọng lượng" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Thời gian lấy hàng<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" class="form-control pickup_time" placeholder="Thời gian lấy hàng" require>
+                                    <input type="text" name="frm_pickup_time" class="form-control pickup_time" placeholder="Thời gian lấy hàng" required>
                                 </div>
                             </div>
 

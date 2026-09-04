@@ -364,7 +364,6 @@
                                 <div>
                                     <small>EMAIL</small>
                                     <p>
-                                        <a href="mailto:accounts@cl-group.com.vn">accounts@cl-group.com.vn</a><br>
                                         <a href="mailto:info@cl-group.com.vn">info@cl-group.com.vn</a>
                                     </p>
                                 </div>

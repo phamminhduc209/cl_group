@@ -1,5 +1,11 @@
+<?php
+session_start();
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+?>
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -35,37 +41,40 @@
                 <div class="contact-box">
                     <h2 class="contact-box__ttl">Shipping rate consultation</h2>
                     <div class="contact-form">
-                        <form action="#" method="POST" class="frm">
+                        <form action="<?= url_path ?>contact.php" method="POST" class="frm">
+                            <input type="hidden" name="form_submit" value="1">
+                            <input type="hidden" name="form_nonce" value="<?= htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8') ?>">
+                            <input type="hidden" name="return_url" value="<?= url_path ?>en/request-a-quote/">
                             <div class="frm-row">
                                 <p class="frm-ttl">Name<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_name" class="form-control" placeholder="Name" require>
+                                    <input type="text" name="frm_name" class="form-control" placeholder="Name" required>
                                 </div>
                             </div>
                             <div class="frm-row">
                                 <p class="frm-ttl">Company<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_name" class="form-control" placeholder="Company" require>
+                                    <input type="text" name="frm_company" class="form-control" placeholder="Company" required>
                                 </div>
                             </div>
                             <div class="frm-row">
                                 <p class="frm-ttl">Phone<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="tel" name="frm_phone" class="form-control" placeholder="Phone" require>
+                                    <input type="tel" name="frm_phone" class="form-control" placeholder="Phone" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Email<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="email" name="frm_mail" class="form-control" placeholder="Email" require>
+                                    <input type="email" name="frm_mail" class="form-control" placeholder="Email" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Chọn dịch vụ<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Shipping method<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <select name="frm_lvc" class="form-control" require>
+                                    <select name="frm_lvc" class="form-control" required>
                                         <option value="">Select shipping method</option>
                                         <option value="frm_duongbien">Ocean Freight</option>
                                         <option value="frm_hangkhong">Air Freight</option>
@@ -77,7 +86,7 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">POL<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_pol" class="form-control" placeholder="POL" require>
+                                    <input type="text" name="frm_pol" class="form-control" placeholder="POL" required>
                                     <p class="frm-note">Port where cargo is loaded onto the ship</p>
                                 </div>
                             </div>
@@ -85,7 +94,7 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">POD<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_pod" class="form-control" placeholder="POD" require>
+                                    <input type="text" name="frm_pod" class="form-control" placeholder="POD" required>
                                     <p class="frm-note">Port where cargo is unloaded from the ship</p>
                                 </div>
                             </div>
@@ -93,21 +102,21 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">Commodity<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Commodity" require>
+                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Commodity" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Quantity<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" name="frm_lmh" class="form-control" placeholder="Quantity" require>
+                                    <input type="text" name="frm_quantity" class="form-control" placeholder="Quantity" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
                                 <p class="frm-ttl">Container Type<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <select name="frm_lvc" class="form-control" require>
+                                    <select name="frm_container" class="form-control" required>
                                         <option value="">Choose Container Type</option>
                                         <option value="20'RF">20'RF</option>
                                         <option value="20'DC">20'DC</option>
@@ -122,14 +131,14 @@
                             <div class="frm-row">
                                 <p class="frm-ttl">Weight<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" class="form-control" placeholder="Weight" require>
+                                    <input type="text" name="frm_weight" class="form-control" placeholder="Weight" required>
                                 </div>
                             </div>
 
                             <div class="frm-row">
-                                <p class="frm-ttl">Cargo ready date<span class="frm-rq">*</span></p>
+                                <p class="frm-ttl">Additional services<span class="frm-rq">*</span></p>
                                 <div class="frm-content">
-                                    <input type="text" class="form-control pickup_time" placeholder="Cargo ready date" require>
+                                    <input type="text" name="frm_pickup_time" class="form-control pickup_time" placeholder="Cargo ready date" required>
                                 </div>
                             </div>
 
